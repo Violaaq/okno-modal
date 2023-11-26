@@ -556,32 +556,32 @@ img {
   color: #111;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
-
-  .reviews-input-svg {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding-right: 8px;
-    margin-left: 18px;
-    border-right: 1.5px solid rgba(64, 64, 64, 0.3);
-    color: #111;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.02em;
-
-    margin-top: 21px;
-  }
-  .bn-input-svg > svg {
-    width: 24px;
-    height: 18px;
-    transform: rotateX(180deg);
-  }
 }
+
+.reviews-input-svg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  margin-left: 18px;
+  border-right: 1.5px solid rgba(64, 64, 64, 0.3);
+  color: #111;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  margin-top: 21px;
+}
+
+.bn-input-svg > svg {
+  width: 24px;
+  height: 18px;
+  transform: rotateX(180deg);
+}
+
 .reviews-input-svg > svg {
   width: 24px;
   height: 18px;
@@ -595,14 +595,24 @@ img {
   border-color: #fd9222;
 }
 
-.bn-input-phone .reviews-input {
-  padding-left: 177px;
-}
 .reviews-input-tel {
-  padding: 17px 24px;
+  background-color: transparent;
+  padding-left: 68px;
 }
+.reviews-input {
+  border: none;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 10px;
+  outline: transparent;
+}
+
 .reviews-phone-container {
   width: 100%;
+  position: relative;
 }
 
 .bn-submit-button {
@@ -634,9 +644,6 @@ img {
 }
 
 .bn-input-tel {
-  padding: 10px 18px;
-}
-.reviews-input-tel {
   padding: 10px 18px;
 }
 
@@ -800,5 +807,18 @@ img {
     height: 91px;
     resize: none;
     outline: transparent;
+  }
+  .reviews-input {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: none;
+    height: auto;
+    outline: transparent;
+    top: 0;
+  }
+  .reviews-input-svg {
+    margin-top: 0%;
   }
 }
